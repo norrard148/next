@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :boards
+  devise_for :users
   resources :member_lounges
   get 'home/index'
 

@@ -1,0 +1,45 @@
+<img src="/assets/광장3.png" style="position:absolute;width:100%;height:100%;-webkit-filter: brightness(1);opacity:0.15;">
+<div style="width:100%;height:15%;position:fixed;display:flex;flex-direction: row;justify-content: center">
+
+    <div style="position:relative;display:flex;flex-direction: row;justify-content: space-between;align-items:center;width: 30%;height:100%;">
+    <a href="/" STYLE="position:relative;FONT-size: 160%;font-family: 'Rajdhani', sans-serif;font-weight:400">MAIN </a>
+    <a href="/home/about" STYLE="position:relative;FONT-size: 160%;font-family: 'Rajdhani', sans-serif;font-weight:400">ABOUT </a>
+    <a href="/home/recruit" STYLE="position:relative;FONT-size: 160%;font-family: 'Rajdhani', sans-serif;font-weight:400">RECRUITS </a>
+    <a href="/home/members" STYLE="position:relative;FONT-size: 160%;font-family: 'Rajdhani', sans-serif;font-weight:400">MEMBERS </a>
+    <a  href="/boards" STYLE="position:relative;FONT-size: 160%;font-family: 'Rajdhani', sans-serif;font-weight:400">LOUNGE </a>
+    </div>
+</div>
+ 
+ <a  href="/users/sign_in" STYLE="left: 93%;top:3%;FONT-size: 160%;font-family: 'Rajdhani', sans-serif;font-weight:400">LOGIN </a>
+<a href="/"STYLE="left: 3%;top:3%;FONT-size: 200%;font-family: 'Rajdhani', sans-serif;font-weight:400">NEXT </a>
+
+
+
+<h1 style="top: 17%; left: 44%;">정회원 게시판</h1>
+
+<table  style=" width:70%;left: 15%;top:30%;position:relative;">
+  <thead style="position:relative;height: 30%; width: 100%;margin-bottom:50px;line-height: 3">
+    <tr style="position:relative;width:100%;margin-bottom:50px;">
+      <th style="position:relative;width:20%;font-family: 'Rajdhani', sans-serif;font-size: 150%;">Title</th>
+      <th style="position:relative;width:40%;font-family: 'Rajdhani', sans-serif;font-size: 150%;" >Content</th>
+      <th style="position:relative;width:13%;font-family: 'Rajdhani', sans-serif;font-size: 150%;" >Show</th>
+       <th style="position:relative;width:13%;font-family: 'Rajdhani', sans-serif;font-size: 150%;" >Edit</th>
+        <th style="position:relative;width:13%;font-family: 'Rajdhani', sans-serif;font-size: 150%;" >Destroy</th>
+    </tr>
+  </thead>
+
+  <tbody style="position:relative; width:100%;margin-top:30px;">
+    <% @boards.each do |board| %>
+      <tr style="position:static;height:10px;width:100%;">
+        <td style="position:static;width:20%;font-family: 'Rajdhani', sans-serif;font-size:150%;"><%= board.title %></td>
+        <td style="position:static;width:40%;font-family: 'Rajdhani', sans-serif;font-size:150%;"><%= board.content %></td>
+        <td style="position:static;width:13%;font-family: 'Rajdhani', sans-serif;font-size:150%;"><%= link_to 'Show', board, :style=> "position:relative;font-family: 'Rajdhani', sans-serif;font-size:100%;font-weight:400;" %></td>
+        <td style="position:static;width:13%;font-family: 'Rajdhani', sans-serif;font-size:150%;"><%= link_to 'Edit', edit_board_path(board), :style=> "position:relative;font-family: 'Rajdhani', sans-serif;font-size:100%;font-weight:400;" %></td>
+        <td style="position:static;width:13%;font-family: 'Rajdhani', sans-serif;font-size:150%;"><%= link_to 'Destroy', board, method: :delete, data: { confirm: 'Are you sure?' },:style=> "position:relative;font-family: 'Rajdhani', sans-serif;font-size:100%;font-weight:400;" %></td>
+     </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to '글쓰기', new_board_path, :style => "left: 80%;font-size:120%;top: 18%;font-family: 'Rajdhani', sans-serif;FONT-WEEIGHT:400;"%>
+

@@ -17,22 +17,23 @@
  * {
      margin: 0px;
      padding: 0px;
-     position:fixed;
+     position: fixed;
+     
  }
-a {
-    text-decoration: none;
-}
-p, h1, h2, h3,a  {
+
+p, h1, h2, h3, a, a:hover  {
     font-family: 'Nanum Barun Gothic', sans-serif;
     font-weight: 200;
-    text-shadow: 1px 1px #c6c6c657; 
+   
     color: rgb(53, 53, 53);
+    text-decoration:none !important;
 }
 
 html, body {
     width: 100%;
     height: 100%;
-    
+    position:static;
+  
 }
 .zz:hover {
     font-size: 400%;
@@ -45,3 +46,157 @@ html, body {
 .carousel-control-next-icon {
     background-image: url('/assets/화살표.svg')
 }
+
+a:link { color: rgb(53, 53, 53); text-decoration: none;}
+a:visited { color: rgb(53, 53, 53); text-decoration: none;}
+a:hover { color: rgb(53, 53, 53); text-decoration: none;}
+
+.dd {
+ left: 50%;
+ top: 50%;   
+}
+
+input, .actions {
+    position: relative;
+}
+
+.ad {
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+
+input {
+    height: 10%;
+    width: 100%;
+    position:static;
+}
+
+
+
+.da a {
+    position: static;
+}
+.da p {
+    position: static;
+}
+form {
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    left: 15%;
+    top: 25%;
+}
+#board_title {
+width: 100%;
+height: 40%;
+position: static;
+border: none;
+border:1px solid rgb(211, 211, 211);
+border-radius: 5px;
+padding: 3px;
+background-color: rgba(255, 255, 255, 0.39);
+}
+
+.field {
+    width: 100%;
+    height: 75%;
+    position: static;
+    
+}
+
+#board_content{
+    width:100%;
+    height:90%;
+    position: static;
+    border: none;
+    border:1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.404);
+}
+
+.ss {
+    height: 15%;
+}
+
+#new_board {
+    left: 15%;
+    top: 25%;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+td {
+    margin:0;
+    padding:0;
+}
+
+.actions input {
+    background-color: none;
+}
+
+#new_user {
+    position: fixed;
+    width: 25%;
+    height: 50%;
+    top: 37%;
+    left: 55%;
+}
+
+#new_user .field input {
+    border: none;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    height: 50px;
+    position:relative;
+}
+#new_user .field label {
+   font-size: 150%;
+   position:relative;
+   font-family: 'Rajdhani', sans-serif;
+   font-weight: 500;
+}
+#new_user .field  {
+   height: 30%;
+}
+
+#new_user a  {
+    position:relative;
+    height: 40%;
+ }
+
+ #x {
+    position: fixed;
+    width: 25%;
+    height: 50%;
+    top: 34%;
+    left: 55%;
+ }
+
+
+ #x .field input {
+    border: none;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    height: 50px;
+    position:relative;
+}
+#x .field label {
+   font-size: 150%;
+   position:relative;
+   font-family: 'Rajdhani', sans-serif;
+   font-weight: 500;
+}
+#x .field  {
+   height: 30%;
+}
+
+#x a  {
+    position:relative;
+    height: 40%;
+ }

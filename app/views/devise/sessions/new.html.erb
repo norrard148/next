@@ -1,0 +1,42 @@
+<img src="/assets/로그인.jpg" style="height: 100%; width: auto;left:0%;top:0%;">
+<h2 style="left:64%;top:22%;font-size:350%; font-family: 'Rajdhani', sans-serif;">Login</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="field" style="position:fixed;height:5%;width:15%;">
+      <%= f.check_box :remember_me, :style=>"position:fixed;height: 20px;width:20px;left: 55%;top:63%;" %>
+      <%= f.label :remember_me, :style=>"position:fixed;height: 20px;width:200px;left: 57%;top:62.5%;" %>
+    </div>
+  <% end -%>
+
+  <div class="actions">
+    <%= f.submit "Submit", :style=>"position:fixed;left:65%;top:70%;width:5%;height:5.5%;font-family: 'Rajdhani', sans-serif;font-weight:500;color:white;background-color:black;font-size:130%;", :class=>"btn" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+<div style="left:60%;top:2%;width:40%;height:4%;">
+
+    <div style="position:static;display:flex;flex-direction: row;justify-content: space-around;align-items:center;width: 100%;height:100%;">
+    <a href="/" STYLE="position:relative;FONT-size: 160%;font-family: 'Rajdhani', sans-serif;font-weight:400">MAIN </a>
+    <a href="/home/about" STYLE="position:relative;FONT-size: 160%;font-family: 'Rajdhani', sans-serif;font-weight:400">ABOUT </a>
+    <a href="/home/recruit" STYLE="position:relative;FONT-size: 160%;font-family: 'Rajdhani', sans-serif;font-weight:400">RECRUITS </a>
+    <a href="/home/members" STYLE="position:relative;FONT-size: 160%;font-family: 'Rajdhani', sans-serif;font-weight:400">MEMBERS </a>
+    <a  href="/boards" STYLE="position:relative;FONT-size: 160%;font-family: 'Rajdhani', sans-serif;font-weight:400">LOUNGE </a>
+    </div>
+</div>
+ 
+
+<a href="/"STYLE="left: 37%;top:2%;FONT-size: 200%;font-family: 'Rajdhani', sans-serif;font-weight:400">NEXT </a>
+
