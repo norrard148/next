@@ -14,8 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-// 
-$( window ).load(function() {
+
+$( window ).ready(function() {
     $('.f').animate({"opacity":"1"},1500);
     setTimeout(function() {
         $('.a').animate({"opacity":"1"},1000);
@@ -33,5 +33,24 @@ $( window ).load(function() {
        $('.e').animate({"opacity":"1"},1000);
     }, 5000);
   });
+  $( window ).load(function() {
+    $('.f').animate({"opacity":"1"},1500);
+    setTimeout(function() {
+        $('.a').animate({"opacity":"1"},1000);
+    }, 1000);
+    setTimeout(function() {
+        $('.b').animate({"opacity":"1"},1000);
+    }, 2000);
+    setTimeout(function() {
+       $('.c').animate({"opacity":"1"},1000);
+    }, 3000);
+    setTimeout(function() {
+        $('.d').animate({"opacity":"1"},1000);
+    }, 4000);
+    setTimeout(function() {
+       $('.e').animate({"opacity":"1"},1000);
+    }, 5000);
+  });
+
 
 
