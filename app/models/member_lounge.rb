@@ -1,0 +1,2 @@
+class MemberLounge < ApplicationRecord
+end

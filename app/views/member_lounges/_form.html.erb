@@ -1,0 +1,17 @@
+<%= form_for(member_lounge) do |f| %>
+  <% if member_lounge.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(member_lounge.errors.count, "error") %> prohibited this member_lounge from being saved:</h2>
+
+      <ul>
+      <% member_lounge.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
