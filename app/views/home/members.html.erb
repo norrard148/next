@@ -28,14 +28,15 @@
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="position:absolute; left: 60%;top: 27%;width: 20%; height: 55%;">
   <div class="carousel-inner" style="width: 100%; height: 100%;">
     <div class="carousel-item active">
-  
-      <img class="d-block w-100" src="/assets/사람 1.jpg" alt="First slide">
+  <%= image_tag("사람 1.jpg", { :class=> " d-block w-100"}) %>
+
+    <div class="carousel-item">
+      <%= image_tag("사람 1.jpg", { :class=> " d-block w-100"}) %>
+
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/사람 1.jpg"alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/사람 1.jpg"alt="Third slide">
+       <%= image_tag("사람 1.jpg", { :class=> " d-block w-100"}) %>
+
     </div>
   </div>
   
@@ -62,19 +63,24 @@
 
 <div style="position:relative;width:100%;top:100%;height: 200%;top:0;">
  <div style="position:absolute;width:15%;height:15%;top: 10%; left:12%;display:flex;flex-direction:column;align-items:center;">
- <img src="/assets/사람 1.jpg" style="position:static;width:100%;height:auto;"/> 
+
+   <%= image_tag("사람 1.jpg", { :style=> "position:static;width:100%;height:auto;"}) %>
+
  <h1 style="position:static;">장영재</h1>
  </div>
    <div style="position:absolute;width:15%;height:15%;top: 10%; left:32%;display:flex;flex-direction:column;align-items:center;">
- <img src="/assets/사람 1.jpg" style="position:static;width:100%;height:auto;"/> 
+  <%= image_tag("사람 1.jpg", { :style=> "position:static;width:100%;height:auto;"}) %>
+
  <h1 style="position:static;">장영재</h1>
  </div>
    <div style="position:absolute;width:15%;height:15%;top: 10%; left:52%;display:flex;flex-direction:column;align-items:center;">
- <img src="/assets/사람 1.jpg" style="position:static;width:100%;height:auto;"/> 
+  <%= image_tag("사람 1.jpg", { :style=> "position:static;width:100%;height:auto;"}) %>
+
  <h1 style="position:static;">장영재</h1>
  </div>
    <div style="position:absolute;width:15%;height:15%;top: 10%; left:72%;display:flex;flex-direction:column;align-items:center;">
- <img src="/assets/사람 1.jpg" style="position:static;width:100%;height:auto;"/> 
+  <%= image_tag("사람 1.jpg", { :style=> "position:static;width:100%;height:auto;"}) %>
+
  <h1 style="position:static;">장영재</h1>
  </div>
 </div>
