@@ -17,26 +17,27 @@
    <h1 style="color: BLACK; left: 22%; top: 67%;font-size: 150%;font-weight: 300;line-height: 150%;position:absolute; ">거주지 : 서울특별시 성북구 인촌로7다길</h1>
  
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="position:absolute;top: 5%;left: 10%;" >
-    <span class="carousel-control-prev-icon" aria-hidden="true"style="background-image: url('왼방향.png');height: 25px;width:15px;position:absolute;top: 53%;left: 15%;"></span>
+   
+     <%= image_tag("왼방향.png", { :class=> "carousel-control-next-icon", :style=>"height: 25px;width:15px;position:absolute;top: 53%;left: 15%;"}) %>
     <span class="sr-only">Previous</span>
   </a>
   <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"  style="position:absolute;top: 5%;left:72%;" >
-    
-    <span class="carousel-control-next-icon" aria-hidden="true" style="background-image: url('오방향.png');height: 25px;width:15px;position:absolute;top: 53%;left: 83%;"></span>
+     <%= image_tag("오방향.png", { :class=> "carousel-control-next-icon", :style=>"height: 25px;width:15px;position:absolute;top: 53%;left: 83%;"}) %>
+   
     <span class="sr-only">Next</span> 
   </a>
 
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="position:absolute; left: 60%;top: 27%;width: 20%; height: 55%;">
   <div class="carousel-inner" style="width: 100%; height: 100%;">
     <div class="carousel-item active">
-    <%= image_tag("사람 1.jpg", { :class=> "d-block w-100" :alt=>"First slide"}) %>
-
+    <%= image_tag("사람 1.jpg", { :class=> "d-block w-100", :alt=>"First slide"}) %>
+  </div>
     <div class="carousel-item">
-      <%= image_tag("사람 1.jpg", { :class=> "d-block w-100" :alt=>"Second slide"}) %>
+      <%= image_tag("사람 1.jpg", { :class=> "d-block w-100", :alt=>"Second slide"}) %>
 
     </div>
     <div class="carousel-item">
-       <%= image_tag("사람 1.jpg", { :class=> "d-block w-100" :alt=>"Third slide"}) %>
+       <%= image_tag("사람 1.jpg", { :class=> "d-block w-100", :alt=>"Third slide"}) %>
 
     </div>
   </div>
