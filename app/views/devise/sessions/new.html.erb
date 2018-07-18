@@ -1,4 +1,6 @@
-<img src="/assets/로그인.jpg" style="height: 100%; width: auto;left:0%;top:0%;">
+
+<%= image_tag("로그인jpg", {:style=> "height: 100%; width: auto;left:0%;top:0%;"}) %>
+
 <h2 style="left:64%;top:22%;font-size:350%; font-family: 'Rajdhani', sans-serif;">Login</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
